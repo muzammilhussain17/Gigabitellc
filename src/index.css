@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ── Gigabyte Brand Colors ─────────────────────────────── */
+  --color-gigabyte-navy:        #06152d;
+  --color-gigabyte-navy-dark:   #020b18;
+  --color-gigabyte-navy-light:  #0f2244;
+  --color-gigabyte-blue:        #0072bc;
+  --color-gigabyte-blue-light:  #00a7e1;
+  --color-gigabyte-sky:         #e6f7ff;
+  --color-gigabyte-gray:        #f4f6f9;
+  --color-gigabyte-gray-mid:    #cbd5e1;
+  --color-gigabyte-text:        #0c192c;
+  --color-gigabyte-text-muted:  #5a6e85;
+  --color-gigabyte-gold:        #00a7e1;
+  --color-gigabyte-green:       #10b981;
+
+  /* ── System Tokens ────────────────────────────────── */
+  --color-border:      hsl(214.3 31.8% 91.4%);
+  --color-input:       hsl(214.3 31.8% 91.4%);
+  --color-ring:        #00a7e1;
+  --color-background:  #ffffff;
+  --color-foreground:  #0c192c;
+
+  --color-primary:             #0072bc;
+  --color-primary-foreground:  #ffffff;
+  --color-secondary:           #e6f7ff;
+  --color-secondary-foreground:#0c192c;
+  --color-muted:               #f4f6f9;
+  --color-muted-foreground:    #5a6e85;
+  --color-accent:              #f4f6f9;
+  --color-accent-foreground:   #0c192c;
+  --color-destructive:         hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-card:                #ffffff;
+  --color-card-foreground:     #0c192c;
+  --color-popover:             #ffffff;
+  --color-popover-foreground:  #0c192c;
+
+  --radius: 0.75rem;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  @media (width >= 640px)  { max-width: 640px; }
+  @media (width >= 768px)  { max-width: 768px; }
+  @media (width >= 1024px) { max-width: 1024px; }
+  @media (width >= 1280px) { max-width: 1280px; }
+  @media (width >= 1400px) { max-width: 1400px; }
+}
+
+@layer base {
+  *, ::after, ::before {
+    box-sizing: border-box;
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-gigabyte-text);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* ── Utility: Gradient Text ─────────────────────────── */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0072bc, #00a7e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Utility: Section spacing ───────────────────────── */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* ── Hero gradient bg ───────────────────────────────── */
+.hero-gradient {
+  background: linear-gradient(160deg, #020b18 0%, #06152d 50%, #0f2244 100%);
+}
+
+/* ── Card hover lift ────────────────────────────────── */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px rgba(0, 167, 225, 0.12), 0 6px 12px rgba(0, 114, 188, 0.06);
+}
+
+/* ── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020b18; }
+::-webkit-scrollbar-thumb { background: #00a7e1; border-radius: 3px; }
