@@ -119,7 +119,7 @@ export function ContactPage() {
                 },
                 {
                   icon: Mail, title: "Email",
-                  content: <a href="mailto:mark.johnson.550467@gmail.com" className="text-[#0072bc] hover:underline font-bold text-sm">mark.johnson.550467@gmail.com</a>,
+                  content: <a href="mailto:mark.johnson.550467@gmail.com" className="text-[#0072bc] hover:underline font-bold text-sm">MarkJohnson@gigabytellc.com</a>,
                   sub: "We respond within 24 hours",
                 },
                 {
