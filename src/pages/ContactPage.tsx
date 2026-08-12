@@ -124,7 +124,7 @@ export function ContactPage() {
                 },
                 {
                   icon: MapPin, title: "Office",
-                  content: <span className="text-gigabyte-text text-sm font-light">7407 NW 23rd St Bethany< /> OK 73008< /> United States </span>,
+                  content: <span className="text-gigabyte-text text-sm font-light"> 7407 NW 23rd St Bethany <br /> OK 73008 <br /> United States </span>,
                   sub: "",
                 },
                 {
