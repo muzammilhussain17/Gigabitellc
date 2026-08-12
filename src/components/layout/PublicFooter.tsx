@@ -113,7 +113,7 @@ export function PublicFooter() {
                 <div>
                   <div className="text-blue-200/50 text-[10px] uppercase font-bold tracking-wider mb-0.5">Email</div>
                   <a href="mailto:mark.johnson.550467@gmail.com" className="text-white text-sm hover:text-cyan-300 transition-colors font-semibold truncate block max-w-[190px]">
-                    mark.johnson.550467@gmail.com
+                    MarkJohnson@gigabytellc.com
                   </a>
                 </div>
               </li>
@@ -122,9 +122,9 @@ export function PublicFooter() {
                 <div>
                   <div className="text-blue-200/50 text-[10px] uppercase font-bold tracking-wider mb-0.5">Office</div>
                   <span className="text-white text-sm font-light">
-                    123 Insurance Way<br />
-                    Suite 400<br />
-                    Dallas, TX 75201
+                    7407 NW 23rd St Bethany <br />
+                    OK 73008<br />
+                    United States
                   </span>
                 </div>
               </li>
