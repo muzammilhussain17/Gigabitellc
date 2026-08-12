@@ -124,7 +124,7 @@ export function ContactPage() {
                 },
                 {
                   icon: MapPin, title: "Office",
-                  content: <span className="text-gigabyte-text text-sm font-light">123 Insurance Way, Suite 400<br />Dallas, TX 75201</span>,
+                  content: <span className="text-gigabyte-text text-sm font-light">7407 NW 23rd St Bethany< /> OK 73008< /> United States </span>,
                   sub: "",
                 },
                 {
